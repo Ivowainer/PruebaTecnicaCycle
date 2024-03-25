@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n84bvam2JPAMj5btmKJKseolWtXV4Ouz3fV/hh4mfo0K6h0YVqnQeLmTx2eZx6pb8ErmZgFyahJHS3mPfjashg==",
+  "dgSpecHash": "zWoOrqtI0GERqCN5QklxNuVvh8mYK2YaQs27mCIrSViZEuNOdTvZFghsEV0Sr0m/+NkB0ehN/OwqKnR2yGKgyQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ivanc\\Documents\\Github\\PruebaTecnicaCycle\\PruebaTecnicaCycleAPI\\PruebaTecnicaCycleAPI.csproj",
+  "projectFilePath": "C:\\Users\\ivanc\\Documents\\Github\\PruebaTecnicaCycle\\PruebaTecnicaCycle.API\\PruebaTecnicaCycle.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ivanc\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\ivanc\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

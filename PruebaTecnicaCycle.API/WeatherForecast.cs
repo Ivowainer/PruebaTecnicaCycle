@@ -1,4 +1,4 @@
-namespace PruebaTecnicaCycleAPI;
+namespace PruebaTecnicaCycle.API;
 
 public class WeatherForecast
 {
