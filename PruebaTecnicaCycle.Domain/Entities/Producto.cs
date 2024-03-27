@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace PruebaTecnicaCycle.Infrastructure
+namespace PruebaTecnicaCycle.Domain.Entities
 {
-    public partial class Producto
+    public class Producto
     {
         public int Id { get; set; }
         public string? Nombre { get; set; }
