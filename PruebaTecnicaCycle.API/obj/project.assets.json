@@ -88,6 +88,29 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "PruebaTecnicaCycle.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "PruebaTecnicaCycle.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PruebaTecnicaCycle.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PruebaTecnicaCycle.Application.dll": {}
+        }
+      },
+      "PruebaTecnicaCycle.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/PruebaTecnicaCycle.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PruebaTecnicaCycle.Domain.dll": {}
+        }
       }
     }
   },
@@ -429,10 +452,21 @@
         "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "PruebaTecnicaCycle.Application/1.0.0": {
+      "type": "project",
+      "path": "../PruebaTecnicaCycle.Application/PruebaTecnicaCycle.Application.csproj",
+      "msbuildProject": "../PruebaTecnicaCycle.Application/PruebaTecnicaCycle.Application.csproj"
+    },
+    "PruebaTecnicaCycle.Domain/1.0.0": {
+      "type": "project",
+      "path": "../PruebaTecnicaCycle.Domain/PruebaTecnicaCycle.Domain.csproj",
+      "msbuildProject": "../PruebaTecnicaCycle.Domain/PruebaTecnicaCycle.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "PruebaTecnicaCycle.Application >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -463,7 +497,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ivanc\\Documents\\Github\\PruebaTecnicaCycle\\PruebaTecnicaCycle.Application\\PruebaTecnicaCycle.Application.csproj": {
+              "projectPath": "C:\\Users\\ivanc\\Documents\\Github\\PruebaTecnicaCycle\\PruebaTecnicaCycle.Application\\PruebaTecnicaCycle.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

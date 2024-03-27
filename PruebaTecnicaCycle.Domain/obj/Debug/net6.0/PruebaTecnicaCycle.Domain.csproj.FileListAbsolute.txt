@@ -1,0 +1,12 @@
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Domain\bin\Debug\net6.0\PruebaTecnicaCycle.Domain.deps.json
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Domain\bin\Debug\net6.0\PruebaTecnicaCycle.Domain.dll
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Domain\bin\Debug\net6.0\PruebaTecnicaCycle.Domain.pdb
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Domain\obj\Debug\net6.0\PruebaTecnicaCycle.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Domain\obj\Debug\net6.0\PruebaTecnicaCycle.Domain.AssemblyInfoInputs.cache
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Domain\obj\Debug\net6.0\PruebaTecnicaCycle.Domain.AssemblyInfo.cs
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Domain\obj\Debug\net6.0\PruebaTecnicaCycle.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Domain\obj\Debug\net6.0\PruebaTecnicaCycle.Domain.sourcelink.json
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Domain\obj\Debug\net6.0\PruebaTecnicaCycle.Domain.dll
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Domain\obj\Debug\net6.0\refint\PruebaTecnicaCycle.Domain.dll
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Domain\obj\Debug\net6.0\PruebaTecnicaCycle.Domain.pdb
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Domain\obj\Debug\net6.0\ref\PruebaTecnicaCycle.Domain.dll

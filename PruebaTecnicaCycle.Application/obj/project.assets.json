@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "PruebaTecnicaCycle.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/PruebaTecnicaCycle.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PruebaTecnicaCycle.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "PruebaTecnicaCycle.Domain/1.0.0": {
+      "type": "project",
+      "path": "../PruebaTecnicaCycle.Domain/PruebaTecnicaCycle.Domain.csproj",
+      "msbuildProject": "../PruebaTecnicaCycle.Domain/PruebaTecnicaCycle.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "PruebaTecnicaCycle.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\ivanc\\.nuget\\packages\\": {}
@@ -34,7 +53,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ivanc\\Documents\\Github\\PruebaTecnicaCycle\\PruebaTecnicaCycle.Domain\\PruebaTecnicaCycle.Domain.csproj": {
+              "projectPath": "C:\\Users\\ivanc\\Documents\\Github\\PruebaTecnicaCycle\\PruebaTecnicaCycle.Domain\\PruebaTecnicaCycle.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
