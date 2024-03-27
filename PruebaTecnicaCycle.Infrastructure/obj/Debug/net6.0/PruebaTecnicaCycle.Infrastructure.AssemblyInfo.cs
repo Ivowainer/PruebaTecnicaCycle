@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PruebaTecnicaCycle.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77327e626f9fb116e339e013b9b8179b402d6ffb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48f84e82c85fee2e05af5308099c6eb3afbf81cf")]
 [assembly: System.Reflection.AssemblyProductAttribute("PruebaTecnicaCycle.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PruebaTecnicaCycle.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
