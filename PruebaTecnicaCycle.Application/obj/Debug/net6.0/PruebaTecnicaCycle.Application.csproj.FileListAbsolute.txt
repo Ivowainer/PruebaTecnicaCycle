@@ -1,0 +1,16 @@
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Application\bin\Debug\net6.0\PruebaTecnicaCycle.Application.deps.json
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Application\bin\Debug\net6.0\PruebaTecnicaCycle.Application.dll
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Application\bin\Debug\net6.0\PruebaTecnicaCycle.Application.pdb
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Application\bin\Debug\net6.0\PruebaTecnicaCycle.Domain.dll
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Application\bin\Debug\net6.0\PruebaTecnicaCycle.Domain.pdb
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Application\obj\Debug\net6.0\PruebaTecnicaCycle.Application.csproj.AssemblyReference.cache
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Application\obj\Debug\net6.0\PruebaTecnicaCycle.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Application\obj\Debug\net6.0\PruebaTecnicaCycle.Application.AssemblyInfoInputs.cache
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Application\obj\Debug\net6.0\PruebaTecnicaCycle.Application.AssemblyInfo.cs
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Application\obj\Debug\net6.0\PruebaTecnicaCycle.Application.csproj.CoreCompileInputs.cache
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Application\obj\Debug\net6.0\PruebaTecnicaCycle.Application.sourcelink.json
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Application\obj\Debug\net6.0\PruebaTecnicaCycle.Application.csproj.CopyComplete
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Application\obj\Debug\net6.0\PruebaTecnicaCycle.Application.dll
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Application\obj\Debug\net6.0\refint\PruebaTecnicaCycle.Application.dll
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Application\obj\Debug\net6.0\PruebaTecnicaCycle.Application.pdb
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.Application\obj\Debug\net6.0\ref\PruebaTecnicaCycle.Application.dll

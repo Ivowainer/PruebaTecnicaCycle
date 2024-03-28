@@ -2,7 +2,7 @@ using PruebaTecnicaCycle.Domain.Entities;
 using PruebaTecnicaCycle.Domain.Repositories;
 using PruebaTecnicaCycle.Infrastructure.Database;
 
-namespace PruebaTecnicaCycle.Infrastructure.Adapters.Repositories
+namespace PruebaTecnicaCycle.Infrastructure.Repositories
 {
     public class ProductoRepository : IProductoRepository
     {

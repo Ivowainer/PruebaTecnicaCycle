@@ -25,7 +25,7 @@ namespace PruebaTecnicaCycle.Infrastructure.Database
         {
             modelBuilder.Entity<Producto>(entity =>
             {
-                entity.HasNoKey();
+                /* entity.HasNoKey(); */
 
                 entity.ToTable("Productos", "Catalogo");
 

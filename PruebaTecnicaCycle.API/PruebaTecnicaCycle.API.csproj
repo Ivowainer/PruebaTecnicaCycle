@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PruebaTecnicaCycle.Application\PruebaTecnicaCycle.Application.csproj" />
+    <ProjectReference Include="..\PruebaTecnicaCycle.Infrastructure\PruebaTecnicaCycle.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

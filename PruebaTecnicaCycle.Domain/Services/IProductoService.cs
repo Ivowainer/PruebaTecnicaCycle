@@ -6,7 +6,7 @@ namespace PruebaTecnicaCycle.Domain.Services
     {
         Task<ICollection<Producto>> GetProductosAsync();
         Task<Producto> GetProductoAsync(int id);
-        Task<Producto> CreateProductoAsync();
+        Task<Producto> CreateProductoAsync(Producto producto);
         Task<Producto> UpdateProductoAsync(int id);
         Task<Producto> DeleteProductoAsync(int id);
     }

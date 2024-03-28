@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "PruebaTecnicaCycle.Application/1.0.0": {
+        "dependencies": {
+          "PruebaTecnicaCycle.Domain": "1.0.0"
+        },
+        "runtime": {
+          "PruebaTecnicaCycle.Application.dll": {}
+        }
+      },
+      "PruebaTecnicaCycle.Domain/1.0.0": {
+        "runtime": {
+          "PruebaTecnicaCycle.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PruebaTecnicaCycle.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PruebaTecnicaCycle.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
