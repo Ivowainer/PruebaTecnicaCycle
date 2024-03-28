@@ -4,10 +4,10 @@ namespace PruebaTecnicaCycle.Domain.Repositories
 {
     public interface IProductoRepository
     {
-        Task<ICollection<Producto>> GetProductosAsync();
-        Task<Producto> GetProductoAsync(int id);
-        Task<Producto> CreateProductoAsync(Producto producto);
-        Task<Producto> UpdateProductoAsync(int id);
-        Task<Producto> DeleteProductoAsync(int id);
+        Task<ICollection<Producto>> GetProductos();
+        Task<Producto> GetProducto(int id);
+        Task<Producto> CreateProducto(Producto producto);
+        Task<Producto> UpdateProducto(int id, Producto producto);
+        Task<Producto> DeleteProducto(int id);
     }
 }

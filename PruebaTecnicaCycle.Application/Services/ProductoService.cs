@@ -12,32 +12,33 @@ namespace PruebaTecnicaCycle.Application.Services
             _productoRepository = productoRepository;
         }
 
-        public Task<Producto> GetProductoAsync(int id)
+        public Task<Producto> GetProducto(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<ICollection<Producto>> GetProductosAsync()
+        public Task<ICollection<Producto>> GetProductos()
         {
             throw new NotImplementedException();
         }
 
-        public Task<Producto> CreateProductoAsync(Producto producto)
+        public Task<Producto> CreateProducto(Producto producto)
         {
             if (string.IsNullOrEmpty(producto.Nombre) || string.IsNullOrEmpty(producto.Categoria) || string.IsNullOrEmpty(producto.Descripcion) || string.IsNullOrEmpty(producto.Imagen))
-            {
                 throw new ArgumentException("None of the fields can be empty");
-            }
 
-            return _productoRepository.CreateProductoAsync(producto);
+            return _productoRepository.CreateProducto(producto);
         }
 
-        public Task<Producto> DeleteProductoAsync(int id)
+        public Task<Producto> UpdateProducto(int id, Producto producto)
         {
-            throw new NotImplementedException();
+            if (string.IsNullOrEmpty(producto.Nombre) || string.IsNullOrEmpty(producto.Categoria) || string.IsNullOrEmpty(producto.Descripcion) || string.IsNullOrEmpty(producto.Imagen))
+                throw new ArgumentException("None of the fields can be empty");
+
+            return _productoRepository.UpdateProducto(id, producto);
         }
 
-        public Task<Producto> UpdateProductoAsync(int id)
+        public Task<Producto> DeleteProducto(int id)
         {
             throw new NotImplementedException();
         }
