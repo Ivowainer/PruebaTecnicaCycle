@@ -20,6 +20,55 @@ namespace PruebaTecnicaCycle.API.Controllers
             _errorHandler = errorHandler;
         }
 
+        [HttpGet]
+        public async Task<ActionResult<ICollection<ProductoDto>>> GetProductos()
+        {
+            try
+            {
+                var productos = await _productoService.GetProductos();
+
+                return productos.Select(producto => new ProductoDto
+                {
+                    Precio = producto.Precio,
+                    Categoria = producto.Categoria,
+                    Descripcion = producto.Descripcion,
+                    Estado = producto.Estado,
+                    Imagen = producto.Imagen,
+                    Nombre = producto.Nombre
+                }).ToList();
+            }
+            catch (Exception ex)
+            {
+                return _errorHandler.HandleError(ex);
+            }
+
+        }
+
+        [Route("{producto_id}")]
+        [HttpGet]
+        public async Task<ActionResult<ProductoDto>> GetProducto(int producto_id)
+        {
+            try
+            {
+                var producto = await _productoService.GetProducto(producto_id);
+
+                return new ProductoDto
+                {
+                    Precio = producto.Precio,
+                    Categoria = producto.Categoria,
+                    Descripcion = producto.Descripcion,
+                    Estado = producto.Estado,
+                    Imagen = producto.Imagen,
+                    Nombre = producto.Nombre
+                };
+            }
+            catch (Exception ex)
+            {
+                return _errorHandler.HandleError(ex);
+            }
+
+        }
+
         [HttpPost]
         public async Task<ActionResult<ProductoDto>> CreateProducto([FromBody] Producto producto)
         {

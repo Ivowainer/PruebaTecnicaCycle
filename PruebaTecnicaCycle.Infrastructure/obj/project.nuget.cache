@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "sZx9lyZk9L0d7hmPbJ4QFDpzyDxd9G8xwooEGiBQh7trguKkMRhFVRWNp+JnCSbk12FLKtrsjmMrj3VL6nPW3Q==",
+  "dgSpecHash": "F++SiA+EvYwSYr8w4ulKRM2NkXYWFFNS7knQYx04fNrsGljLDuOmShLPRuhP1JGC661GlDMk8IMK5CyXV+0gfA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ivanc\\Documents\\Github\\PruebaTecnicaCycle\\PruebaTecnicaCycle.Infrastructure\\PruebaTecnicaCycle.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ivanc\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\ivanc\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ivanc\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\ivanc\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.7\\microsoft.data.sqlclient.2.1.7.nupkg.sha512",

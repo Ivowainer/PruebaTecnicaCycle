@@ -71,3 +71,4 @@ C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.API\obj\De
 C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.API\obj\Debug\net6.0\PruebaTecnicaCycle.API.pdb
 C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.API\obj\Debug\net6.0\PruebaTecnicaCycle.API.genruntimeconfig.cache
 C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.API\obj\Debug\net6.0\ref\PruebaTecnicaCycle.API.dll
+C:\Users\ivanc\Documents\Github\PruebaTecnicaCycle\PruebaTecnicaCycle.API\bin\Debug\net6.0\Dapper.dll

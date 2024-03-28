@@ -12,14 +12,14 @@ namespace PruebaTecnicaCycle.Application.Services
             _productoRepository = productoRepository;
         }
 
-        public Task<Producto> GetProducto(int id)
-        {
-            throw new NotImplementedException();
-        }
-
         public Task<ICollection<Producto>> GetProductos()
         {
-            throw new NotImplementedException();
+            return _productoRepository.GetProductos();
+        }
+
+        public Task<Producto> GetProducto(int id)
+        {
+            return _productoRepository.GetProducto(id);
         }
 
         public Task<Producto> CreateProducto(Producto producto)

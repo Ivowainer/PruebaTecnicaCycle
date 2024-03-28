@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2dGDSBnBoHSYDm0PGO4+KL9kvl0MmmqF4Ste/XAHFARJg5o2rnGKYNDw39cCHTYL2lG+HOjMHXe85YgUTxa8Ag==",
+  "dgSpecHash": "U8bfJR5wP4a3MWraVwAPr+XjDpUqBvq87J1ay+wLRyCKz35+8zGFjUD209XuL0RMvjInroKoYZlKKlfLno9lmw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ivanc\\Documents\\Github\\PruebaTecnicaCycle\\PruebaTecnicaCycle.API\\PruebaTecnicaCycle.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ivanc\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\ivanc\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\ivanc\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.7\\microsoft.data.sqlclient.2.1.7.nupkg.sha512",
     "C:\\Users\\ivanc\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",

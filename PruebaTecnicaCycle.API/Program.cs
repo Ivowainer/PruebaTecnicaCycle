@@ -15,6 +15,7 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<CycleContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("SQLConnection"))
 );
+builder.Services.AddSingleton<DapperContext>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -22,6 +23,7 @@ builder.Services.AddSwaggerGen();
 // Repo & Services
 builder.Services.AddScoped<IProductoService, ProductoService>();
 builder.Services.AddScoped<IProductoRepository, ProductoRepository>();
+
 
 // Utils
 builder.Services.AddSingleton<IErrorHandler, ErrorHandler>();

@@ -1,3 +1,4 @@
+using Dapper;
 using PruebaTecnicaCycle.Domain.Entities;
 using PruebaTecnicaCycle.Domain.Repositories;
 using PruebaTecnicaCycle.Infrastructure.Database;
@@ -7,20 +8,28 @@ namespace PruebaTecnicaCycle.Infrastructure.Repositories
     public class ProductoRepository : IProductoRepository
     {
         private readonly CycleContext _context;
+        private readonly DapperContext _contextDapper;
 
-        public ProductoRepository(CycleContext context)
+        public ProductoRepository(CycleContext context, DapperContext contextDapper)
         {
             _context = context;
+            _contextDapper = contextDapper;
         }
 
-        public Task<ICollection<Producto>> GetProductos()
+        public async Task<ICollection<Producto>> GetProductos()
         {
-            throw new NotImplementedException();
+            var query = $"SELECT * FROM {_contextDapper.Data}";
+            using var connection = _contextDapper.CreateConnection();
+            var productos = await connection.QueryAsync<Producto>(query);
+            return productos.ToList();
         }
 
-        public Task<Producto> GetProducto(int id)
+        public async Task<Producto> GetProducto(int id)
         {
-            throw new NotImplementedException();
+            var query = $"SELECT * FROM {_contextDapper.Data} WHERE Id = {id}";
+            using var connection = _contextDapper.CreateConnection();
+            var producto = await connection.QueryAsync<Producto>(query);
+            return producto.FirstOrDefault()!;
         }
 
         public async Task<Producto> CreateProducto(Producto producto)
