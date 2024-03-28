@@ -68,5 +68,30 @@ namespace PruebaTecnicaCycle.API.Controllers
             }
 
         }
+
+        [Route("{producto_id}")]
+        [HttpDelete]
+        public async Task<ActionResult<ProductoDto>> DeleteProducto(int producto_id)
+        {
+            try
+            {
+                var newProducto = await _productoService.DeleteProducto(producto_id);
+
+                return new ProductoDto
+                {
+                    Precio = newProducto.Precio,
+                    Categoria = newProducto.Categoria,
+                    Descripcion = newProducto.Descripcion,
+                    Estado = newProducto.Estado,
+                    Imagen = newProducto.Imagen,
+                    Nombre = newProducto.Nombre
+                };
+            }
+            catch (Exception ex)
+            {
+                return _errorHandler.HandleError(ex);
+            }
+
+        }
     }
 }

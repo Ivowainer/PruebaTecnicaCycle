@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PruebaTecnicaCycle.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1b52255cc8ef49f632475f726ea664fae30b0de")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af6424094d1bd82cd422ecbd3f983b2f818c7c03")]
 [assembly: System.Reflection.AssemblyProductAttribute("PruebaTecnicaCycle.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PruebaTecnicaCycle.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

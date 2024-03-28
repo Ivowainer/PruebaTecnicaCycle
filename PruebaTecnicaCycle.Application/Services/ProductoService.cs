@@ -40,7 +40,7 @@ namespace PruebaTecnicaCycle.Application.Services
 
         public Task<Producto> DeleteProducto(int id)
         {
-            throw new NotImplementedException();
+            return _productoRepository.DeleteProducto(id);
         }
     }
 }

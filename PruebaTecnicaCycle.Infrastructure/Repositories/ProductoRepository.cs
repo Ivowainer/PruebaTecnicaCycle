@@ -47,9 +47,13 @@ namespace PruebaTecnicaCycle.Infrastructure.Repositories
             return productoToUpdate;
         }
 
-        public Task<Producto> DeleteProducto(int id)
+        public async Task<Producto> DeleteProducto(int id)
         {
-            throw new NotImplementedException();
+            var productoToDelete = await _context.Productos.FindAsync(id) ?? throw new InvalidOperationException("Producto not found.");
+            _context.Productos.Remove(productoToDelete);
+            await _context.SaveChangesAsync();
+
+            return productoToDelete;
         }
 
     }
