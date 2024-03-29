@@ -1,4 +1,8 @@
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+using PruebaTecnicaCycle.API.Config.Auth;
 using PruebaTecnicaCycle.API.Config.ErrorHandler;
 
 using PruebaTecnicaCycle.Application.Services;
@@ -18,11 +22,46 @@ builder.Services.AddDbContext<CycleContext>(options =>
 builder.Services.AddSingleton<DapperContext>();
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(option =>
+{
+    option.SwaggerDoc("v1", new OpenApiInfo { Title = "Demo API", Version = "v1" });
+    option.AddSecurityDefinition("MasterKey", new OpenApiSecurityScheme
+    {
+        In = ParameterLocation.Header,
+        Description = "Please enter a valid Master Key",
+        Name = "MasterKey",
+        Type = SecuritySchemeType.ApiKey,
+    });
+    option.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "MasterKey"
+                }
+            },
+            new string[] {}
+        }
+    });
+});
 
 // Repo & Services
 builder.Services.AddScoped<IProductoService, ProductoService>();
 builder.Services.AddScoped<IProductoRepository, ProductoRepository>();
+
+builder.Services.AddAuthentication("MasterKey")
+            .AddScheme<AuthenticationSchemeOptions, MasterKeyAuthenticationHandler>("MasterKey", options => { });
+
+builder.Services.AddAuthorization(options =>
+    {
+        options.DefaultPolicy = new AuthorizationPolicyBuilder()
+            .AddAuthenticationSchemes("MasterKey")
+            .RequireAuthenticatedUser()
+            .Build();
+    });
 
 
 // Utils

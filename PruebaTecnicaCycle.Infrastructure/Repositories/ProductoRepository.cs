@@ -64,6 +64,5 @@ namespace PruebaTecnicaCycle.Infrastructure.Repositories
 
             return productoToDelete;
         }
-
     }
 }

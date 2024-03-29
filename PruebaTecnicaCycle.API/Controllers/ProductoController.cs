@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 using PruebaTecnicaCycle.API.Config.ErrorHandler;
@@ -21,6 +22,7 @@ namespace PruebaTecnicaCycle.API.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<ICollection<ProductoDto>>> GetProductos()
         {
             try
