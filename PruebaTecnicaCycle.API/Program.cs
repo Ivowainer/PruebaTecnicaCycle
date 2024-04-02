@@ -69,6 +69,7 @@ builder.Services.AddSingleton<IErrorHandler, ErrorHandler>();
 
 builder.Services.AddCors(options =>
 {
+    // ONLY FOR TESTING
     options.AddPolicy("new", app =>
     {
         app.AllowAnyOrigin();
