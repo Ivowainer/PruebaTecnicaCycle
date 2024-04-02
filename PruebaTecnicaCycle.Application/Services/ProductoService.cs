@@ -27,6 +27,8 @@ namespace PruebaTecnicaCycle.Application.Services
             if (string.IsNullOrEmpty(producto.Nombre) || string.IsNullOrEmpty(producto.Categoria) || string.IsNullOrEmpty(producto.Descripcion) || string.IsNullOrEmpty(producto.Imagen))
                 throw new ArgumentException("None of the fields can be empty");
 
+            Console.WriteLine(producto.Imagen);
+
             return _productoRepository.CreateProducto(producto);
         }
 

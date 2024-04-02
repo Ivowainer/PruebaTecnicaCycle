@@ -67,6 +67,16 @@ builder.Services.AddAuthorization(options =>
 // Utils
 builder.Services.AddSingleton<IErrorHandler, ErrorHandler>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("new", app =>
+    {
+        app.AllowAnyOrigin();
+        app.AllowAnyHeader();
+        app.AllowAnyMethod();
+    });
+});
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())

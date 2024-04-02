@@ -1,16 +1,16 @@
+using System.Runtime.InteropServices;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-
 using PruebaTecnicaCycle.API.Config.ErrorHandler;
 using PruebaTecnicaCycle.API.Dtos;
-
+using PruebaTecnicaCycle.API.Utils;
 using PruebaTecnicaCycle.Domain.Entities;
 using PruebaTecnicaCycle.Domain.Services;
 
 namespace PruebaTecnicaCycle.API.Controllers
 {
     [ApiController]
-    [Route("api/producto")]
+    [Route("/api/producto")]
     public class ProductoController : ControllerBase
     {
         private readonly IProductoService _productoService;
@@ -72,11 +72,13 @@ namespace PruebaTecnicaCycle.API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<ProductoDto>> CreateProducto([FromBody] Producto producto)
+        public async Task<ActionResult<ProductoDto>> CreateProducto([FromForm] Producto producto, [FromForm] IFormFile imagen)
         {
             try
             {
+                producto.Imagen = ConvertImages.ConvertImageToBase64(imagen);
                 var newProducto = await _productoService.CreateProducto(producto);
+
 
                 return new ProductoDto
                 {
@@ -97,10 +99,11 @@ namespace PruebaTecnicaCycle.API.Controllers
 
         [Route("{producto_id}")]
         [HttpPut]
-        public async Task<ActionResult<ProductoDto>> UpdateProducto([FromBody] Producto producto, int producto_id)
+        public async Task<ActionResult<ProductoDto>> UpdateProducto([FromForm] Producto producto, [FromForm] IFormFile imagen, int producto_id)
         {
             try
             {
+                producto.Imagen = ConvertImages.ConvertImageToBase64(imagen);
                 var newProducto = await _productoService.UpdateProducto(producto_id, producto);
 
                 return new ProductoDto

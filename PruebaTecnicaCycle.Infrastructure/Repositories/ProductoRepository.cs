@@ -18,7 +18,8 @@ namespace PruebaTecnicaCycle.Infrastructure.Repositories
 
         public async Task<ICollection<Producto>> GetProductos()
         {
-            var query = $"SELECT * FROM {_contextDapper.Data}";
+            /* var query = $"SELECT * FROM {_contextDapper.Data}"; */
+            var query = $"EXECUTE Catalogo.ListarProductos;";
             using var connection = _contextDapper.CreateConnection();
             var productos = await connection.QueryAsync<Producto>(query);
             return productos.ToList();
